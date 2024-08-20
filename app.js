@@ -29,7 +29,7 @@ app.use(cors(corsOptions));
 
 const port = process.env.PORT || 3000;
 
-mongoose.connect(process.env.MONGO_URI, {
+mongoose.connect(process.env.MONGO_URL, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 })
